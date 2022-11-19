@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <meta charset="UTF-8"> 
+    <!-- metaタグはwebページの仕様情報 -->
+      <title>簡単なメモアプリ</title>
+      <meta name ="viewport" content = "width=device-width">
+      <link rel="stylesheet" href="./css/sample.css">
+    </head>
+<body>
+
+    <div id="headline">
+      <h1>テキストを入力すると箇条書きでメモを追加,<br>
+      表の基本操作
+      </h1>
+      <p1 class="test">入門3</p1>
+      <p2><img src="./img/eto_tora_banzai.png" alt="dummy"></p2>
+    </div>
+    <div id="body_table">
+      <!-- borderを設定しないと枠線が出現しない -->
+      <input type="text" class="new_tr">
+      <button type="button" class="add_tr">メモ追加</button>
+
+      <table id="sample-table" border="3" >
+        <thead>
+          <tr>
+              <th>name</th>
+              <th>years old</th>
+              <th>memo</th>
+          </tr>
+        </thead>
+        <tbody>  
+          <tr>
+              <td>name</td>
+              <td>years old</td>
+              <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <td>hello</td>
+            <td>world</td>
+            <td></td>
+        </tfoot> 
+      </table>
+    </div>
+
+    <input type="text" class="new_memo">
+    <button type="button" class="add_memo">メモ追加</button>
+    <ul type="disc" class="memolist">
+      <li>
+        メモです
+      </li>
+    </ul>
+
+    <!-- <ul type="circle" class="memolist2">
+      <li>
+        memodesu
+      </li>
+    </ul>  -->
+<script  type="text/javascript" src ="./js/sample.js"></script>
+</body>
+
+</html>
+
+
